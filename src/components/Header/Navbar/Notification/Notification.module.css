@@ -1,0 +1,27 @@
+
+.notification{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff14;
+    text-align: center;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #acacac;
+    position: relative;
+    z-index: 2;
+}
+.badge{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #00a3ff;
+    top: -5px;
+    right: -5px;
+    text-align: center;
+    color: white;
+    font-size: 10.5px;
+}

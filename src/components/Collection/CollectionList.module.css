@@ -1,0 +1,10 @@
+.collectionlist{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    margin-left: 20%;
+    margin-right: 40px;
+}

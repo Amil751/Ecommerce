@@ -1,0 +1,9 @@
+.nav{
+    background-color: var(--mainBackGround) !important;
+    width: 20%;
+    position: absolute !important;
+    top: 120px;
+}
+.nav a{
+    color: white;
+}

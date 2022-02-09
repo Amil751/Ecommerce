@@ -1,0 +1,145 @@
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px grey solid;
+  padding: 5px;
+  align-items: center;
+  background-color: var(--mainBackGround);
+  color: #f5f8fa; 
+  justify-content: space-between;
+  height: 80px;
+  color: #acacac;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.list li {
+  margin-left: 10px;
+}
+
+.logo {
+  border-right: 1px solid grey;
+  padding: 5px;
+  margin-left: 5%;
+  padding: 0 30px;
+}
+.search-form-wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.search-form-wrapper .form-control,
+.search-form-wrapper input {
+  background: transparent;
+  border-color: #ffffff14;
+  font-size: 15px;
+  border-radius: 10px;
+
+  color: #acacac;
+  outline: none;
+  box-shadow: none;
+  transition: 0.4s;
+  padding-right: 35px;
+  height: 40px;
+  width: 270px;
+}
+.search-form-wrapper .form-control:focus,
+.search-form-wrapper input:focus {
+  border-color: #00a3ff;
+}
+.search-form-wrapper .search-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transform: translateY(-50%);
+  font-size: 17px;
+  background: transparent;
+}
+.search-form-wrapper .search-icon button {
+  border: 0 none;
+  padding: 0;
+  background: transparent;
+  color: #acacac;
+}
+.createbutton {
+  background-color: #212e48 !important;
+  color: white !important;
+}
+.createbutton:hover {
+  background-color: #00a3ff !important;
+  transition: 0.6s;
+}
+.search2 {
+  display: none;
+}
+.icon {
+  display: none;
+}
+.rightnav {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 960px) {
+  .list {
+    display: none;
+  }
+  .search-form-wrapper {
+    display: none;
+  }
+  .search2 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff14;
+    text-align: center;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #acacac;
+    position: relative;
+    z-index: 2;
+  }
+  .hidden{
+    display: none;
+  }
+  .icon {
+    display: block;
+    background-color: transparent;
+    color: #acacac;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    padding: 10px 0;
+  }
+  .rightnav{
+    width: 80%;
+  }
+  .logo{
+    border: none;
+    margin: auto;
+  }
+  .hidden{
+    display: none;
+  }
+}

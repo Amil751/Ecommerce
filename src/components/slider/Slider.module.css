@@ -1,0 +1,17 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.slider2{
+width: 80%;
+
+}
+.text {
+  color: white;
+}
+.text {
+  color: white;
+}
