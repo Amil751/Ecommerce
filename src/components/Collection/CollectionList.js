@@ -10,38 +10,48 @@ import { CollectionHeader } from "./Collection.header";
 const collections = [
   {
     id: 1,
+    count: 1,
     url: image1,
-    price: 45,
-    inf: { brand: "samsung", size: "45" },
+    price: 485,
+    inf: { name: "vacuum cleaner", brand: "samsung", size: "45" },
   },
   {
     id: 2,
+    count: 1,
     url: image2,
-    price: 45,
-    inf: { brand: "samsung", size: "45" },
+    price: 85,
+    inf: { name: "vacuum cleaner", brand: "samsung", size: "45" },
   },
   {
     id: 3,
+    count: 1,
     url: image3,
-    price: 45,
-    inf: { brand: "samsung", size: "45" },
+    price: 12,
+    inf: { name: "vacuum cleaner", brand: "samsung", size: "45" },
   },
   {
-    id: 2,
+    id: 4,
+    count: 1,
     url: image4,
-    price: 45,
-    inf: { brand: "samsung", size: "45" },
+    price: 36,
+    inf: { name: "vacuum cleaner", brand: "samsung", size: "45" },
+  },
+  {
+    id: 5,
+    count: 1,
+    url: image4,
+    price: 28,
+    inf: { name: "vacuum cleaner", brand: "samsung", size: "45" },
   },
 ];
 
 export const CollectionList = () => {
-  console.log(image3);
   return (
     <div>
-      <CollectionHeader/>
+      <CollectionHeader />
       <div className={classes.collectionlist}>
-        {collections.map((collection) => {
-          return <Collection collection={collection} />;
+        {collections.map((collection,index) => {
+          return <Collection collection={collection} key={index} />;
         })}
       </div>
     </div>

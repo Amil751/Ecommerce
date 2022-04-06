@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import classes from "./SideBar.module.css";
 import logo from "../../../../assets/images/logo/logo-white.png";
 import CloseIcon from "@mui/icons-material/Close";
-import { useDispatch } from "react-redux";
-const SideBar = ({ expand, setExpand }) => {
-  const dispatch=useDispatch();
-  if (!expand) {
+
+export const Sidecategories = ({show,setShow}) => {
+  if (!show) {
     return null;
   }
 
@@ -14,7 +13,7 @@ const SideBar = ({ expand, setExpand }) => {
       <div
         className={classes.sidebarwrapper}
         onClick={() => {
-          setExpand({ type: "visibl" });
+          setShow({ type: "showcategory" });
         }}
       ></div>
       <div className={classes.sidebar}>
@@ -23,21 +22,19 @@ const SideBar = ({ expand, setExpand }) => {
         </div>
         <div>
           <ul className={classes.list}>
-            <li>Home</li>
-            <li onClick={()=> {
-            console.log('dfdfdfdfdf')
-           return dispatch({type:'showcategory'})}}>Categories</li>
-            <li>About</li>
-            <li>Explore</li>
-            <li>Pages</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li>Alma</li>
+            <li>Armud</li>
+            <li>Heyva</li>
+            <li>Nar</li>
+            <li>Erik</li>
+            <li>Saftali</li>
+            <li>Badam</li>
           </ul>
         </div>
         <div
           className={classes.icon}
           onClick={() => {
-            setExpand(false);
+            setShow({ type: "showcategory" });
           }}
         >
           <CloseIcon />
@@ -46,5 +43,3 @@ const SideBar = ({ expand, setExpand }) => {
     </>
   );
 };
-
-export default SideBar;

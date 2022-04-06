@@ -91,7 +91,9 @@
   align-items: center;
   margin-right: 5%;
 }
-
+.categories{
+  display:none;
+}
 @media screen and (max-width: 960px) {
   .list {
     display: none;
@@ -121,6 +123,9 @@
     background-color: transparent;
     color: #acacac;
     border: none;
+  }
+  .categories{
+    display: block;
   }
 }
 

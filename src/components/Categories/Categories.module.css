@@ -1,9 +1,21 @@
-.nav{
-    background-color: var(--mainBackGround) !important;
-    width: 20%;
-    position: absolute !important;
-    top: 120px;
+.nav {
+  background-color: var(--mainBackGround) !important;
+  width: 20%;
+  position: absolute !important;
+  top: 120px;
 }
-.nav a{
-    color: white;
+.nav a {
+  color: white;
+  margin-left: px;
+}
+.nav a:hover {
+  color: var(--indigo);
+}
+.nav li {
+  text-align: left;
+}
+@media screen and (max-width: 960px) {
+  .nav {
+    display: none !important;
+  }
 }

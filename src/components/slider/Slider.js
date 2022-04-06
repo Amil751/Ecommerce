@@ -18,7 +18,7 @@ export const SimpleSliderconst = () => {
   };
   return (
     <div className={classes.slider}>
-        <h2 className={classes.text}> Single Item</h2>
+        {/* <h2 className={classes.text}> Single Item</h2> */}
       <div style={{ width: "80%" }} className={classes.slider2} >
         
         <Slider {...settings} className="text" >
